@@ -57,10 +57,10 @@ const ALILC_STATIC_RESOURCES = {
   themeStyleUrl: 'https://alifd.alicdn.com/npm/@alifd/theme-lowcode-light@0.2.1/dist/next.var.min.css',
   engineCoreCssUrl: 'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine/1.2.5/dist/css/engine-core.css',
   engineExtCssUrl: 'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine-ext/1.0.6/dist/css/engine-ext.css',
-  enginePresetCssUrl: 'https://gitee.com/yanfanVIP/lowcode-build-plugin-lowcode/raw/master/src/public/lowcode-preset-plugin.css',
+  enginePresetCssUrl: 'https://cdn.jsdelivr.net/gh/yanfanvip/lowcode-build-plugin-lowcode/src/public/lowcode-preset-plugin.css',
   engineCoreJsUrl: 'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine/1.2.5/dist/js/engine-core.js',
   engineExtJsUrl: 'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine-ext/1.0.6/dist/js/engine-ext.js',
-  enginePresetJsUrl: 'https://gitee.com/yanfanVIP/lowcode-build-plugin-lowcode/raw/master/src/public/lowcode-preset-plugin.js',
+  enginePresetJsUrl: 'https://cdn.jsdelivr.net/gh/yanfanvip/lowcode-build-plugin-lowcode/src/public/lowcode-preset-plugin.js',
   raxRenderJsUrl: 'https://alifd.alicdn.com/npm/@alilc/lowcode-rax-renderer@1.0.18/dist/index.umd.js',
   raxRenderCssUrl: 'https://alifd.alicdn.com/npm/@alilc/lowcode-rax-renderer@1.0.18/dist/index.css',
 };
