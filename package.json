@@ -22,6 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "@alilc/lowcode-material-parser": "^1.0.1",
+    "@alilc/lowcode-plugin-set-ref-prop": "^1.0.1",
     "@alilc/lowcode-rax-renderer": "^1.0.2",
     "@alilc/lowcode-react-renderer": "^1.0.1",
     "@alilc/lowcode-types": "^1.0.1",

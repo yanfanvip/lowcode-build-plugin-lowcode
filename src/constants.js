@@ -41,37 +41,26 @@ const DEFAULT_CATEGORIES = [
 
 const STATIC_RESOURCES = {
   themeVariableUrl: 'https://alifd.alicdn.com/npm/@alifd/theme-lowcode-dark@0.6.1/variables.css',
-  themeStyleUrl:
-    'https://alifd.alicdn.com/npm/@alifd/theme-lowcode-dark@0.6.1/dist/next.var.min.css',
-  engineCoreCssUrl:
-    'https://dev.g.alicdn.com/ali-lowcode/ali-lowcode-engine/0.16.6/engine-core.css',
-  enginePresetCssUrl:
-    'https://alifd.alicdn.com/npm/@alifd/lowcode-preset-plugin@1.1.8/dist/editor-preset-plugin.css',
+  themeStyleUrl: 'https://alifd.alicdn.com/npm/@alifd/theme-lowcode-dark@0.6.1/dist/next.var.min.css',
+  engineCoreCssUrl: 'https://dev.g.alicdn.com/ali-lowcode/ali-lowcode-engine/0.16.6/engine-core.css',
+  enginePresetCssUrl: 'https://alifd.alicdn.com/npm/@alifd/lowcode-preset-plugin@1.1.8/dist/editor-preset-plugin.css',
   engineExtCssUrl: 'https://g.alicdn.com/ali-lowcode/lowcode-engine-ext/1.0.20/engine-ext.css',
   engineCoreJsUrl: 'https://dev.g.alicdn.com/ali-lowcode/ali-lowcode-engine/0.16.6/engine-core.js',
   engineExtJsUrl: 'https://g.alicdn.com/ali-lowcode/lowcode-engine-ext/1.0.20/engine-ext.js',
-  enginePresetJsUrl:
-    'https://alifd.alicdn.com/npm/@alifd/lowcode-preset-plugin@1.1.8/dist/editor-preset-plugin.js',
+  enginePresetJsUrl: 'https://alifd.alicdn.com/npm/@alifd/lowcode-preset-plugin@1.1.8/dist/editor-preset-plugin.js',
   raxRenderJsUrl: 'https://alifd.alicdn.com/npm/@alilc/lowcode-rax-renderer@1.0.18/dist/index.umd.js',
   raxRenderCssUrl: 'https://alifd.alicdn.com/npm/@alilc/lowcode-rax-renderer@1.0.18/dist/index.css',
 };
 
 const ALILC_STATIC_RESOURCES = {
   themeVariableUrl: 'https://alifd.alicdn.com/npm/@alifd/theme-lowcode-light@0.2.1/variables.css',
-  themeStyleUrl:
-    'https://alifd.alicdn.com/npm/@alifd/theme-lowcode-light@0.2.1/dist/next.var.min.css',
-  engineCoreCssUrl:
-    'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine/1.2.5/dist/css/engine-core.css',
-  engineExtCssUrl:
-    'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine-ext/1.0.6/dist/css/engine-ext.css',
-  enginePresetCssUrl:
-    'https://alifd.alicdn.com/npm/@alilc/lowcode-preset-plugin@0.1.2/dist/lowcode-preset-plugin.css',
-  engineCoreJsUrl:
-    'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine/1.2.5/dist/js/engine-core.js',
-  engineExtJsUrl:
-    'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine-ext/1.0.6/dist/js/engine-ext.js',
-  enginePresetJsUrl:
-    'https://alifd.alicdn.com/npm/@alilc/lowcode-preset-plugin@0.1.2/dist/lowcode-preset-plugin.js',
+  themeStyleUrl: 'https://alifd.alicdn.com/npm/@alifd/theme-lowcode-light@0.2.1/dist/next.var.min.css',
+  engineCoreCssUrl: 'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine/1.2.5/dist/css/engine-core.css',
+  engineExtCssUrl: 'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine-ext/1.0.6/dist/css/engine-ext.css',
+  enginePresetCssUrl: '/lowcode-preset-plugin.css',
+  engineCoreJsUrl: 'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine/1.2.5/dist/js/engine-core.js',
+  engineExtJsUrl: 'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine-ext/1.0.6/dist/js/engine-ext.js',
+  enginePresetJsUrl: '/lowcode-preset-plugin.js',
   raxRenderJsUrl: 'https://alifd.alicdn.com/npm/@alilc/lowcode-rax-renderer@1.0.18/dist/index.umd.js',
   raxRenderCssUrl: 'https://alifd.alicdn.com/npm/@alilc/lowcode-rax-renderer@1.0.18/dist/index.css',
 };
