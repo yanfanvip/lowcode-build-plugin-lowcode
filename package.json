@@ -1,6 +1,6 @@
 {
   "name": "@alifd/build-plugin-lowcode",
-  "version": "0.4.8",
+  "version": "0.4.8-beta1",
   "description": "build plugin for component-to-lowcode",
   "main": "src/index.js",
   "keywords": [
