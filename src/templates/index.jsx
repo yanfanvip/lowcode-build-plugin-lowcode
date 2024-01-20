@@ -19,14 +19,14 @@ const basePackages = [
   {
     package: 'moment',
     version: '2.24.0',
-    urls: ['https://g.alicdn.com/mylib/moment/2.24.0/min/moment.min.js'],
+    urls: ['/moment.2.24.0.js'],
     library: 'moment',
   },
   {
     package: "lodash",
     library: "_",
     urls: [
-      "https://g.alicdn.com/platform/c/lodash/4.6.1/lodash.min.js"
+      "/lodash.4.6.1.min.js"
     ]
   },
   {
@@ -34,8 +34,8 @@ const basePackages = [
     package: '@alifd/next',
     version: '1.25.23',
     urls: [
-      'https://g.alicdn.com/code/lib/alifd__next/1.25.23/next.min.css',
-      'https://g.alicdn.com/code/lib/alifd__next/1.25.23/next-with-locales.min.js',
+      '/next.theme.css',
+      '/next.1.26.4.min.js',
     ],
     library: 'Next',
   },
@@ -43,25 +43,12 @@ const basePackages = [
     package: 'antd',
     version: '4.23.0',
     urls: [
-      'https://g.alicdn.com/code/lib/antd/4.23.0/antd.min.js',
-      'https://g.alicdn.com/code/lib/antd/4.23.0/antd.min.css',
+      '/antd.4.23.0.min.js',
+      '/antd.4.23.0.min.css',
     ],
     library: 'antd',
   },
 ];
-
-if (baseLibrary === 'rax') {
-  basePackages.push({
-    title: 'meet',
-    package: '@alifd/meet',
-    version: 'meet@2.4.2-beta.6',
-    urls: [
-      'https://mc-fusion.alibaba-inc.com/unpkg/@alifd/meet@2.4.2-beta.6/umd/meet.lowcode.js',
-      'https://mc-fusion.alibaba-inc.com/unpkg/@alifd/meet@2.4.2-beta.6/umd/meet.min.css',
-    ],
-    library: 'Meet',
-  });
-}
 
 const assets = {
   packages: []

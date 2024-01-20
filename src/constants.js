@@ -40,31 +40,27 @@ const DEFAULT_CATEGORIES = [
 ];
 
 const STATIC_RESOURCES = {
-  themeVariableUrl: 'https://alifd.alicdn.com/npm/@alifd/theme-lowcode-dark@0.6.1/variables.css',
-  themeStyleUrl: 'https://alifd.alicdn.com/npm/@alifd/theme-lowcode-dark@0.6.1/dist/next.var.min.css',
-  engineCoreCssUrl: 'https://dev.g.alicdn.com/ali-lowcode/ali-lowcode-engine/0.16.6/engine-core.css',
-  enginePresetCssUrl: 'https://alifd.alicdn.com/npm/@alifd/lowcode-preset-plugin@1.1.8/dist/editor-preset-plugin.css',
-  engineExtCssUrl: 'https://g.alicdn.com/ali-lowcode/lowcode-engine-ext/1.0.20/engine-ext.css',
-  engineCoreJsUrl: 'https://dev.g.alicdn.com/ali-lowcode/ali-lowcode-engine/0.16.6/engine-core.js',
-  engineExtJsUrl: 'https://g.alicdn.com/ali-lowcode/lowcode-engine-ext/1.0.20/engine-ext.js',
-  enginePresetJsUrl: 'https://alifd.alicdn.com/npm/@alifd/lowcode-preset-plugin@1.1.8/dist/editor-preset-plugin.js',
-  raxRenderJsUrl: 'https://alifd.alicdn.com/npm/@alilc/lowcode-rax-renderer@1.0.18/dist/index.umd.js',
-  raxRenderCssUrl: 'https://alifd.alicdn.com/npm/@alilc/lowcode-rax-renderer@1.0.18/dist/index.css',
-  disableWarningUrl: 'https://cdn.jsdelivr.net/gh/yanfanvip/lowcode-build-plugin-lowcode/src/public/disableWarning.js',
+  themeVariableUrl: '/theme-lowcode-dark.variables0.6.1.css',
+  themeStyleUrl: '/theme-lowcode-dark.0.6.1.css',
+  engineCoreCssUrl: '/lowcode-engine_1.1.11-beta.12.css',
+  enginePresetCssUrl: '/lowcode-preset-plugin.css',
+  engineExtCssUrl: '/lowcode-engine-ext.1.0.6.css',
+  engineCoreJsUrl: '/lowcode-engine_1.1.11-beta.12.js',
+  engineExtJsUrl: '/lowcode-engine-ext.1.0.6.js',
+  enginePresetJsUrl: '/lowcode-preset-plugin.js'
 };
 
 const ALILC_STATIC_RESOURCES = {
-  themeVariableUrl: 'https://alifd.alicdn.com/npm/@alifd/theme-lowcode-light@0.2.1/variables.css',
-  themeStyleUrl: 'https://alifd.alicdn.com/npm/@alifd/theme-lowcode-light@0.2.1/dist/next.var.min.css',
-  engineCoreCssUrl: 'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine/1.2.5/dist/css/engine-core.css',
-  engineExtCssUrl: 'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine-ext/1.0.6/dist/css/engine-ext.css',
-  enginePresetCssUrl: 'https://cdn.jsdelivr.net/gh/yanfanvip/lowcode-build-plugin-lowcode/src/public/lowcode-preset-plugin.css',
-  engineCoreJsUrl: 'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine/1.2.5/dist/js/engine-core.js',
-  engineExtJsUrl: 'https://uipaas-assets.com/prod/npm/@alilc/lowcode-engine-ext/1.0.6/dist/js/engine-ext.js',
-  enginePresetJsUrl: 'https://cdn.jsdelivr.net/gh/yanfanvip/lowcode-build-plugin-lowcode/src/public/lowcode-preset-plugin.js',
-  raxRenderJsUrl: 'https://alifd.alicdn.com/npm/@alilc/lowcode-rax-renderer@1.0.18/dist/index.umd.js',
-  raxRenderCssUrl: 'https://alifd.alicdn.com/npm/@alilc/lowcode-rax-renderer@1.0.18/dist/index.css',
-  disableWarningUrl: 'https://cdn.jsdelivr.net/gh/yanfanvip/lowcode-build-plugin-lowcode/src/public/disableWarning.js',
+  themeVariableUrl: '/theme-lowcode-light.variables.0.2.10.css',
+  themeStyleUrl: '/theme-lowcode-light.0.2.1.css',
+  engineCoreCssUrl: '/lowcode-engine_1.1.11-beta.12.css',
+  engineExtCssUrl: '/lowcode-engine-ext.1.0.6.css',
+  enginePresetCssUrl: '/lowcode-preset-plugin.css',
+  engineCoreJsUrl: '/lowcode-engine_1.1.11-beta.12.js',
+  engineExtJsUrl: '/lowcode-engine-ext.1.0.6.js',
+  enginePresetJsUrl: '/lowcode-preset-plugin.js',
+  raxRenderJsUrl: '/lowcode-rax-renderer.1.0.18.js',
+  raxRenderCssUrl: '/lowcode-rax-renderer.1.0.18.css',
 };
 
 const STATIC_RESOURCES_MAP = {
@@ -104,7 +100,7 @@ const COMPONENT_PROPS = [
 
 const UNPKG_BASE_URL_MAP = {
   '@ali': 'https://unpkg.alibaba-inc.com',
-  '@alilc': 'https://unpkg.com',
+  '@alilc': '/',
 };
 
 const META_TYPES = ['', 'dev', 'web', 'mobile', 'design', 'sketch'];

@@ -73,7 +73,6 @@ function getEntry(rootDir, entryPath) {
     const p = path.resolve(rootDir, defaultEntryPaths[i]);
     if (fse.existsSync(p)) {
       return p.replace(/\\/g, '\\\\');
-      // return p;
     }
   }
   return '';
@@ -368,11 +367,8 @@ async function start(options, pluginOptions) {
     presetConfig = {},
     customPlugins = [],
   } = pluginOptions || {};
-  if (baseLibrary === 'rax' && Array.isArray(extraAssets)) {
-    extraAssets.push(
-      'https://g.alicdn.com/code/npm/@alife/mobile-page/0.1.1/build/lowcode/assets-prod.json',
-    );
-  }
+
+
   const metaExportName = `${PARSED_NPM_NAME.uniqueName}Meta`;
   const { viewPath, metaPathMap, renderViewPathMap, platforms } = await debounceBuild(
     options,
@@ -490,10 +486,25 @@ async function start(options, pluginOptions) {
         filename: 'preview.html',
       },
     ]);
-    config.devServer.headers({ 'Access-Control-Allow-Origin': '*' });
-
+    config.devServer.headers({ 'Access-Control-Allow-Origin': '*' })
+    const contentBase = config.devServer.get('contentBase')
+    if(!contentBase){
+      config.devServer.contentBase([
+        path.resolve(__dirname, 'statics')
+      ])
+    }else if(contentBase && typeof contentBase == 'string'){
+      config.devServer.contentBase([
+        contentBase,
+        path.resolve(__dirname, 'statics')
+      ])
+    }else if(contentBase && Array.isArray(contentBase)){
+      config.devServer.contentBase([
+        ...contentBase,
+        path.resolve(__dirname, 'statics')
+      ])
+    }
     config.devServer.https(Boolean(https));
-    config.devServer.set('transportMode', 'ws');
+    config.devServer.set('transportMode', 'ws')
     // WSL 环境下正常的文件 watch 失效，需切换为 poll 模式
     if (isWsl) {
       config.merge({
@@ -846,7 +857,7 @@ async function bundleEditorView(
     componentViewsImportStr = _componentViews
       .map((component) => {
         const componentNameFolder = camel2KebabComponentName(component);
-        const viewJsPath = path.resolve(rootDir, `${lowcodeDir}/${componentNameFolder}/view`);
+        const viewJsPath = path.resolve(rootDir, `${lowcodeDir}/${componentNameFolder}/view`).replace(/\\/g, '\\\\');
         return `import * as ${component}Data from '${viewJsPath}'`;
       })
       .join('\n');
@@ -1033,7 +1044,7 @@ async function bundleAssets(options, pluginOptions, metaTypes, renderTypes, exec
 
   if (baseLibrary === 'rax' && Array.isArray(extraAssets)) {
     extraAssets.push(
-      `https://g.alicdn.com/code/npm/@alife/mobile-page/0.1.1/build/lowcode/assets-prod.json`,
+      `/assets-prod.json`,
     );
   }
   const baseSchemas = await Promise.all(
